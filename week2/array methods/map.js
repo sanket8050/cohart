@@ -20,9 +20,10 @@ console.log(newarr); // ["₹100", "₹200", "₹300"]
 
 // mapping in objects
 
-let users =  [ {name: "sanket", age: 21, ismale: true},
-    {name: "sara", age: 19, ismale: false},
-    {name: "john", age: 17, ismale: true}
+let users = 
+[    {name: "sanket", age: 21, ismale: true},
+     {name: "sara", age: 19, ismale: false},
+     {name: "john", age: 17, ismale: true}
 ];  
 
 let userage = users.map(user => user.age);

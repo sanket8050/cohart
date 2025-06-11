@@ -46,3 +46,7 @@ let person ={
 
 person.country = "USA"; // Adding a new property
 console.log(person);
+
+// delete property 
+delete person.country;
+console.log(person)
