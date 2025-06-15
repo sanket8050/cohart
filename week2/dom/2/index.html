@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Toggle Example</title>
+
+    <style>
+        body
+        {
+
+        transition: background-color 0.3s ease;
+        font-family: sans-serif;
+        text-align: center;
+        padding-top: 100px;
+
+        }
+
+      #btn
+       {
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+       }
+
+    </style>
+
+  </head>
+
+  <body>
+    <h1 id="heading">Hello Sanket</h1>
+    <button id="btn">Click Me</button>
+
+    <script>
+      const heading = document.getElementById("heading");
+      const button = document.getElementById("btn");
+      let isOthello = false;
+
+      button.addEventListener("click", () => {
+        isOthello = !isOthello;
+
+        if (isOthello) {
+          heading.textContent = "now u become the othello";
+          document.body.style.backgroundColor = "royalblue";
+        } else {
+          heading.textContent = "now u again old one";
+          document.body.style.backgroundColor = "gold";
+        }
+      });
+      
+    </script>
+  </body>
+
+</html>
