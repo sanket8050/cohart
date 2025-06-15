@@ -1,0 +1,12 @@
+ {
+  "name": "week3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "description": "Node.js project for reading a.txt",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
