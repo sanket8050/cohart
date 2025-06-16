@@ -1,10 +1,11 @@
 let boxes = document.querySelectorAll(".box");
 let resetbtm = document.querySelector("#rst-btn");
 let newgame = document.querySelector("#newgame");
-let msgcont = document.querySelector(".msg-container")
+let msgcontainer = document.querySelector(".msg-container")
 let msg = document.querySelector("#msg");
 
 let turnO =  true ;//player x. player o
+let count = 0;
 
 const winpattern = [
     [0,1,2],
@@ -30,15 +31,41 @@ boxes.forEach((box) => {
         }
         box.disabled = true;
 
-        checkwinner();
-            
-        
+        let iswiner = checkwinner();
+        count++;
+        if (count === 9 && !iswiner){
+            gamedraw();
+        }
     });
 });
 
+const gamedraw = () =>{
+    msg.innerText = 'game is draw';
+    msgcontainer.classList.remove("hide");
+    disableboxes();
+}
+const resetgame = () =>{
+    turnO = true;
+    count = 0 ;
+    enableboxes();
+    msgcontainer.classList.add("hide");
+};
+const enableboxes = () =>{
+    for (let box of boxes){
+        box.disabled = false;
+        box.innerText = "";
+    }
+} 
+const disableboxes = () =>{
+    for (let box of boxes){
+        box.disabled = true;
+    }
+} 
+
 const showwinner = (winner) =>{
     msg.innerText = `Congratulations ,winner is  ${winner}`;
-    msgcont.classList.remove("hide");
+    msgcontainer.classList.remove("hide");
+    disableboxes();
 }
 const checkwinner = () =>{
     for(let  pattern of winpattern ){
@@ -49,9 +76,11 @@ const checkwinner = () =>{
         if(pos1 !== "" && pos1 === pos2 && pos2 === pos3){
             console.log("winner", pos1);
             showwinner(pos1);
-            // Optionally, disable all boxes after win
-            boxes.forEach(box => box.disabled = true);
-            break;
+            return true; // Return true if winner found
         }
     }
+    return false; // Return false if no winner
 };
+
+newgame.addEventListener("click" , resetgame);
+resetbtm.addEventListener("click" ,resetgame);
