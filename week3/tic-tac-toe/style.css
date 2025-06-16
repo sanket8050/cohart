@@ -23,7 +23,7 @@ body {
     width: 18vmin;
     border-radius: 1rem;
     border: none;
-    box-shadow:  3px 3px red ;
+    box-shadow:  3px 3px rgb(42, 78, 211) ;
     font-size: 8vmin;
     background-color: rgb(161, 109, 209);
     color: rgb(73, 255, 86);
