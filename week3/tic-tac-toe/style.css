@@ -28,6 +28,7 @@ body {
     background-color: rgb(161, 109, 209);
     color: rgb(73, 255, 86);
 }
+
 .box:hover{
     box-shadow:-0.3em 0 0.4em olive;
     border: solid;
@@ -43,6 +44,7 @@ body {
     justify-content: center;
     align-items: center;
     gap : 1.5vmin;
+    
 }
 
 #rst-btn{
@@ -52,6 +54,7 @@ body {
     color: antiquewhite;
     border-radius: 1rem;
     border: none;
+    cursor: grab;
 }
 
 #newgame{
@@ -61,6 +64,7 @@ body {
     color: antiquewhite;
     border-radius: 1rem;
     border: none;
+    cursor: pointer;
 }
 #msg{
     color: white;
