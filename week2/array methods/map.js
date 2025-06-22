@@ -4,7 +4,10 @@ let newArr = arr1.map((num,ad) => {
     return num + ad; //ad is index of the element in the array
 });
 
-console.log(newArr); // [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+console.log(newArr); // [  1,  3,  5,  7,  9,  11, 13, 15, 17, 19 ]
+
+
+ 
 
 
 let original = [1,2,3,4,5 ];
