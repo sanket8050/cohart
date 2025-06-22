@@ -2,7 +2,7 @@ const greet = (name) =>{
     return "hello "+ name + "!"
     
 }
-console.log(greet("Sanaket")); 
+console.log(greet("Sanket")); 
 
 
 //single parameter arrow function

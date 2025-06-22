@@ -27,5 +27,5 @@ b();
 // | Arrow Function       | ❌ No    | ❌ No               | ❌ No                 |
 // | Function Expression  | ❌ No    | ✅ Yes              | ❌ No                 |
 // | Closure              | ❌ No    | ✅ Yes              | ❌ No                 |
-// | IIFE                 | ❌ No    | ✅ Yes / ❌        | ✅ Yes                |
+// | IIFE                 | ❌ No    | ✅ Yes / ❌        |  ✅ Yes                |
 
