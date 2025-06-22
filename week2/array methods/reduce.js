@@ -97,4 +97,3 @@ let names = students.map(s => s.name);
 let pass = students.filter(marks => marks.marks > 88);
 console.log(pass);
 
-let 
