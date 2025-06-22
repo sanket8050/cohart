@@ -8,7 +8,7 @@ function canvote(user){
         console.log(user.name + " cannot vote");
     }
 
-    }
+}
 
 
 

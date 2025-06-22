@@ -1,3 +1,5 @@
+
+
 let boxes = document.querySelectorAll(".box");
 let resetbtm = document.querySelector("#rst-btn");
 let newgame = document.querySelector("#newgame");
@@ -41,7 +43,7 @@ boxes.forEach((box) => {
 
 const gamedraw = () =>{
     msg.innerText = 'game is draw';
-    
+    msgcontainer.classList.remove("hide");
     disableboxes();
 }
 const resetgame = () =>{
