@@ -12,11 +12,20 @@ body {
 }
 
 .container {
-  background-color: #fff;
+  background-color: #3fdcb8;
+  border: solid 3px #f9e;
   padding: 2rem;
   border-radius: 1rem;
   min-height: 45vh;
   width: 40vh;
+}
+body .container:hover{
+ 
+  background-color: #E9A5F1 ;
+  border-radius: 0 2rem 0 2rem;
+  transition-duration: 1s;
+  
+
 }
 
 form {
@@ -33,10 +42,14 @@ input {
 }
 
 form input {
-  border: 1px solid lightgray;
+  border: 1px solid rgb(64, 108, 170);
   font-size: 1rem;
   height: 3rem;
   padding-left: 0.5rem;
+  background-color: #B13BFF;
+}
+form ,select{
+  background-color: #3fdcb8;
 }
 
 .dropdown {
@@ -80,3 +93,12 @@ form button {
   font-size: 1.15rem;
   cursor: pointer;
 }
+
+.container:hover form {
+  background-color: #E9A5F1;
+  transition-duration: 1s;
+}
+.container:hover select  {
+  background-color: #E9A5F1;
+  transition-duration: 1s;
+  }

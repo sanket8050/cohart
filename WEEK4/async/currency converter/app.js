@@ -50,7 +50,7 @@ const updateExchangeRate = async () => {
         let data = await response.json();
 
         let rate = data.rates[to];
-
+       
         let finalAmount = amtVal * rate;
         msg.innerText = `${amtVal} ${from} = ${finalAmount.toFixed(2)} ${to}`;
     } catch (error) {
