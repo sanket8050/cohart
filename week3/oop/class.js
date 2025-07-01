@@ -1,29 +1,58 @@
-class mycar {
+// class mycar {
 
-    constructor(brand,milege){
-        console.log("constructor is created");
-        this.brandname = brand;
-        this.milege = milege;
-    }
-    start(){
-        console.log("starting");
-    }
+//     constructor(brand,milege){
+//         console.log("constructor is created");
+//         this.brandname = brand;
+//         this.milege = milege;
+//     }
+//     start(){
+//         console.log("starting");
+//     }
     
-    stop(){
-        console.log("stopijng");
+//     stop(){
+//         console.log("stopijng");
         
-    }
+//     }
     
-    steering(){
-        console.log("steering");
+//     steering(){
+//         console.log("steering");
+
+//     }
+
+//     setbrand(brand){
+//         this.brandname = brand;
+//     }
+
+// };
+
+// let fortuner = new mycar("fortuner",20);
+// let lexus = new mycar("lexus", 25);   
+
+
+//-----------------------------------------
+
+class rectangle{
+
+    constructor(width,height){
+        this.width = width;
+        this.height = height;
+        
 
     }
 
-    setbrand(brand){
-        this.brandname = brand;
+    area(){
+        const area = this.height*this.width;
+        return area;
     }
 
-};
+    perimeter(){
+        const per = this.width + this.height;
+        return per;
+    }
+}
 
-let fortuner = new mycar("fortuner",20);
-let lexus = new mycar("lexus", 25);   
+const rect = new rectangle(5,2);
+const area = rect.area();
+const peri = rect.perimeter();
+console.log(peri);
+console.log(area);
