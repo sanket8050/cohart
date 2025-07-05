@@ -1,21 +1,21 @@
-// function callback(){
-//     console.log("3 sec passed");
-// }
+function callback(){
+    console.log("3 sec passed");
+}
 
-// setTimeout(5000).then(callback);
+setTimeout(5000).then(callback);
 
 
-// function waitfor3sec(resolve){
-//     console.log(resolve);
-//     setTimeout(resolve,2000);
-// }
+function waitfor3sec(resolve){
+    console.log(resolve);
+    setTimeout(resolve,2000);
+}
 
-// function main(){
+function main(){
 
-//     console.log("sanket");
-// }
+    console.log("sanket");
+}
 
-// waitfor3sec(main);
+waitfor3sec(main);
 
 
 
