@@ -12,7 +12,7 @@ let  x
 function startChangingColor(){
 
     if(!x){
-        x = setInterval(changing,500);
+        x = setInterval(changing,500 );
     }
 
     function changing(){
