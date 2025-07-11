@@ -1,0 +1,31 @@
+// const promise0ne = new Promise(function(resolve,reject){
+//     setTimeout(() => {
+//         console.log("logged");
+        
+//         resolve();
+//     }, 1000);
+// });
+
+// promise0ne().then(function(){
+//     console.log("consumed")
+// })
+
+
+const  promise_two = new Promise(function(resolve,reject){
+
+    setTimeout(function(){
+        try {
+            resolve({username:"same",email:"sanket@gmail.com"})
+        } catch (error) {
+            console.log("sankrt")
+        }
+    },1000)
+});
+
+promise_two.then(function(username){
+    console.log(username)
+})
+
+async function name() {
+    
+}
