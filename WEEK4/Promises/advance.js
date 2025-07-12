@@ -11,21 +11,41 @@
 // })
 
 
-const  promise_two = new Promise(function(resolve,reject){
+    const  promise_two = new Promise(function(resolve,reject){
 
-    setTimeout(function(){
+        setTimeout(function(){
+            try {
+                resolve({username:"same",email:"sanket@gmail.com"})
+            } catch (error) {
+                console.log("sankrt")
+            }
+        },1000)
+    });
+
+    promise_two.then(function(username){
+        console.log(username)
+    })
+
+    async function name1() {
         try {
-            resolve({username:"same",email:"sanket@gmail.com"})
+            const s = await promise_two
+        console.log(s)
         } catch (error) {
-            console.log("sankrt")
+            console.log(Error)
+            
         }
-    },1000)
-});
 
-promise_two.then(function(username){
-    console.log(username)
-})
+        
+    }
 
-async function name() {
-    
-}
+    name1();
+
+
+    fetch('https://api.github.com/users/hiteshchoudhary')
+    .then((response) => {
+        return response.json()
+    })
+    .then((data) => {
+        console.log(data);
+    })
+    .catch((error) => console.log(error))
